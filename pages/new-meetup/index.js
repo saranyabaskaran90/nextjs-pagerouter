@@ -16,5 +16,8 @@ export default function NewMeetupPage() {
     console.log(data);
     router.push('/')
     }
-    return <NewMeetupForm onAddMeetup={addMeetupUrlHandler}/>
+    return (<><Head> 
+        <title>New Meetups</title>
+        <meta name="description" content="sample new meetups" />
+    </Head><NewMeetupForm onAddMeetup={addMeetupUrlHandler}/></>)
 }
